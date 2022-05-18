@@ -62,8 +62,6 @@ function App() {
     // }
 
     setCurrAttempt({attempt: currAttempt.attempt + 1, letterPos: 0})
-    console.log('updates')
-    console.log(correctWord)
 
     if(currWord  === correctWord) {
       // + "\r"
