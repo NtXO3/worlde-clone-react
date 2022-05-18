@@ -62,8 +62,10 @@ function App() {
     // }
 
     setCurrAttempt({attempt: currAttempt.attempt + 1, letterPos: 0})
+    console.log('updates')
 
-    if(currWord + "\r" === correctWord) {
+    if(currWord === correctWord) {
+      // + "\r"
       setGameOver({ gameOver: true, guessedWord: true })
       setScore(score + 1)
       return
